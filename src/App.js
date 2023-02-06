@@ -22,6 +22,7 @@ function App() {
         defaultChecked={disabled}
         onClick={() => setDisabled(!disabled)}
       />
+      <label htmlFor="disable-button-checkbox">Disable button</label>
     </div>
   );
 }
