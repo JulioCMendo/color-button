@@ -49,7 +49,7 @@ test('Checkbox disables button on first click and enables button on second click
   const colorButton = screen.getByRole('button', {
     name: 'Change to Midnight Blue'
   });
-  expect(colorButton).not.toBeEnabled();
+  expect(colorButton).toBeDisabled();
 
   // check that button color is gray
   expect(colorButton).toHaveStyle({ 'background-color': 'gray' });
